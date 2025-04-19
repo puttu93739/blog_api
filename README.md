@@ -32,24 +32,16 @@ https://roadmap.sh/projects/blogging-platform-api
    ```bash
    git clone https://github.com/your-username/blogging-platform-api.git
    cd blogging-platform-api
+   
 Create a virtual environment and activate it
-
-bash
-Copy
-Edit
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-Install the dependencies
 
-bash
-Copy
-Edit
+
+Install the dependencies
 pip install -r requirements.txt
+
 Start MongoDB locally or use MongoDB Atlas and update your MongoDB URI in .env or in db.py.
 
 Run the server
-
-bash
-Copy
-Edit
 uvicorn main:app --reload
